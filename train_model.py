@@ -119,7 +119,7 @@ plt.tight_layout()
 plt.savefig('FeatureImportance.png', dpi=120)
 plt.close()
 
-with open('scores.txt') as score:
+with open('scores.txt', 'w') as score:
     score.write(f"Random Forest Train Var: 2.1f%%\n" % train_acc_rf)
     score.write(f"Random Forest Test Var: 2.1f%%\n" % test_acc_rf)
     score.write(f"F1 Score: 2.1f%%\n" % f1_rf)
