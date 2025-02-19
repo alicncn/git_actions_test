@@ -23,7 +23,10 @@ jobs:
           python test.py
 
           echo "# Sanity Checks" > report2.md
-          cat scores.txt >> report2.md
+          cat test.txt >> report2.md
+
+          echo "# RF & LR Model Score" > report.md
+          cat scores.txt >> report.md
 
           echo "# Confusion Matrix & Feature Importance" > report1.md
           echo '![](./ConfusionMatrix.png "ConfusionMatrix")' >> report1.md
