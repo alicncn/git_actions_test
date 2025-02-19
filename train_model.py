@@ -96,7 +96,7 @@ def plot_cm(cm, target_name, title="Confusion Matrix", cmap=None, normalize=True
     plt.tight_layout()
     plt.ylabel('True Label')
     plt.xlabel('Predicted Label\naccuracy={:0.4f}; misclass={:0.4f}'.format(accuracy, misclass))
-    plt.savefig('ConfusionMatrix', dpi=120)
+    plt.savefig('ConfusionMatrix.png', dpi=120)
     plt.show()
 
 target_name = np.array(['setosa', 'versicolor', 'virginica'])
